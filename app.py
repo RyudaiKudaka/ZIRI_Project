@@ -7,7 +7,8 @@ app = Flask(__name__)
 # ホームページ
 @app.route('/')
 def home():
-    return "Welcome to ZIRI!"
+    return render_template('home.html')
+
 
 # フォームページ
 @app.route('/form', methods=['GET', 'POST'])
