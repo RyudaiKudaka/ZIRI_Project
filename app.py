@@ -4,10 +4,10 @@ import sqlite3
 # Flaskアプリケーションのインスタンスを作成
 app = Flask(__name__)
 
-# ホームページ
 @app.route('/')
 def home():
     return render_template('home.html')
+
 
 
 # フォームページ
